@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Saiteja TestNG RegressionSuite" thread-count="2" parallel="tests">
+  <test name="login test" verbose="2">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://app.hubspot.com/login"/>
+    <classes>
+      <class name="com.tests.LoginTest"/>
+    </classes>
+  </test>
+   <test name="sign up test" verbose="2">
+     <parameter name="browser" value="firefox"/>
+     <parameter name="url" value="https://app.hubspot.com/login"/>
+    <classes>
+      <class name="com.tests.SignUpTest"/>
+    </classes>
+  </test> 
+</suite> 
