@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Saiteja TestNG RegressionSuite]" parallel="tests">
-  <test thread-count="2" name="login test(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://app.hubspot.com/login"/>
-    <classes>
-      <class name="com.tests.LoginTest">
-        <methods>
-          <include name="teatDown"/>
-          <include name="setup"/>
-          <include name="loginPageTest"/>
-        </methods>
-      </class> <!-- com.tests.LoginTest -->
-    </classes>
-  </test> <!-- login test(failed) -->
-  <test thread-count="2" name="sign up test(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <parameter name="url" value="https://app.hubspot.com/login"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.tests.SignUpTest">
         <methods>
@@ -27,5 +12,5 @@
         </methods>
       </class> <!-- com.tests.SignUpTest -->
     </classes>
-  </test> <!-- sign up test(failed) -->
-</suite> <!-- Failed suite [Saiteja TestNG RegressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
